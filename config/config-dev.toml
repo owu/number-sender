@@ -1,0 +1,44 @@
+[app]
+name = "owu-number-sender-go"
+env = "dev"
+
+[server]
+[server.http]
+port = 8080
+
+#[server.grpc]
+#port = 9090
+
+[server.redis]
+[server.redis.default]
+dialTimeout = 2
+idleTimeout = 60
+maxActive = 50
+maxIdle = 10
+readTimeout = 2
+
+[server.redis.default.master]
+addr = "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379"
+[server.redis.default.slaves]
+addr = [
+    "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379",
+    "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379"
+]
+
+
+[api]
+encrypt = "9b0b7484bc65e241804ce8eeb014f247"
+
+[api.rules]
+less = true
+eastern = true
+western = true
+abcd = true
+abc = true
+dcba = true
+cba = true
+two = true
+rptab = true
+abab = true
+aaaa = true
+aaa = true
