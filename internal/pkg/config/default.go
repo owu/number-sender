@@ -53,6 +53,13 @@ func (instance *LoadConfigs) verifyFile(cfgVar string) string {
 		err                    error
 	)
 
+	// 如果cfgVar已经是绝对路径，直接检查是否存在
+	if filepath.IsAbs(cfgVar) {
+		if _, err := os.Stat(cfgVar); err == nil {
+			return cfgVar
+		}
+	}
+
 	if root, err = os.Getwd(); err != nil {
 		logger.Log.Error("config Getwd failed", zap.Error(err))
 		panic("config Getwd failed: " + err.Error())

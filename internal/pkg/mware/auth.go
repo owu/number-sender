@@ -3,17 +3,18 @@ package mware
 import (
 	"crypto/md5"
 	"fmt"
+	"strconv"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"github.com/owu/number-sender/internal/pkg/config"
 	"github.com/owu/number-sender/internal/pkg/utils"
-	"strconv"
-	"time"
 )
 
 func AuthMw(configs *config.LoadConfigs) gin.HandlerFunc {
 	return func(c *gin.Context) {
 
-		if configs.Env() == "dev" {
+		if configs.Env() == "test" {
 			c.Next()
 			return
 		}

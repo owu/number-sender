@@ -29,3 +29,8 @@ go.work.sum
 
 logs
 vendor
+
+#docker container data
+#docker/app/
+#docker/redis/data/
+#docker/redis/logs/

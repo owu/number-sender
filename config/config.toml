@@ -1,13 +1,10 @@
 [app]
-name = "owu-number-sender-go"
-env = "dev"
+name = "number-sender-go"
+env = "test"
 
 [server]
 [server.http]
 port = 8080
-
-#[server.grpc]
-#port = 9090
 
 [server.redis]
 [server.redis.default]
@@ -18,11 +15,11 @@ maxIdle = 10
 readTimeout = 2
 
 [server.redis.default.master]
-addr = "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379"
+addr = "redis://:Sfu&z9B2*Q&BEt&o@redis-local:6379"
 [server.redis.default.slaves]
 addr = [
-    "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379",
-    "redis://:Sfu&z9B2*Q&BEt&o@127.0.0.1:6379"
+    "redis://:Sfu&z9B2*Q&BEt&o@redis-local:6379",
+    "redis://:Sfu&z9B2*Q&BEt&o@redis-local:6379"
 ]
 
 
