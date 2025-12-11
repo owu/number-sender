@@ -1,0 +1,26 @@
+name: number-sender-group
+services:
+    redis-local:
+        container_name: redis-server
+        ports:
+          - 6379:6379
+        volumes:
+          - ./docker/redis/conf/redis.conf:/etc/redis/redis.conf:ro
+          - ./docker/redis/data:/data:rw
+          - ./docker/redis/logs:/logs:rw
+        restart: always
+        privileged: true
+        image: redis:8.2.3
+        command: redis-server /etc/redis/redis.conf
+    number-sender:
+        container_name: number-sender
+        ports:
+          - 8080:8080
+        volumes:
+          - ./docker/app/logs:/home/www/logs/number-sender-go/:rw
+          - ./docker/app/config/config.toml:/home/www/apps/number-sender-go/config/config.toml:ro
+        restart: always
+        privileged: true
+        image: owu/number-sender:0.0.1
+        depends_on:
+          - redis-local
