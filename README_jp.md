@@ -168,7 +168,7 @@ Dockerイメージ移行機能
   イメージ名: owu/number-sender
   イメージバージョン: 0.0.1
   完全なイメージ名: owu/number-sender:0.0.1
-  エクスポートファイル名: owu.number-sender.v0.0.1.tar
+  エクスポートファイル名: owu.number-sender.0.0.1.tar
 ========================================
 実行する操作を選択してください:
 1) イメージをエクスポート (docker save)
@@ -203,8 +203,8 @@ docker logs number-sender
 5. イメージ移行：
 ```bash
 # イメージをエクスポート
-docker save -o owu.number-sender.v0.0.1.tar owu/number-sender:0.0.1
+docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
 
 # イメージをインポート
-docker load -i owu.number-sender.v0.0.1.tar
+docker load -i owu.number-sender.0.0.1.tar
 ```

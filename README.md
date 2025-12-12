@@ -168,7 +168,7 @@ Current Configuration:
   Image Name: owu/number-sender
   Image Version: 0.0.1
   Full Image Name: owu/number-sender:0.0.1
-  Export File Name: owu.number-sender.v0.0.1.tar
+  Export File Name: owu.number-sender.0.0.1.tar
 ========================================
 Please select an operation:
 1) Export Image (docker save)
@@ -203,8 +203,8 @@ docker logs number-sender
 5. Image Migration:
 ```bash
 # Export Image
-docker save -o owu.number-sender.v0.0.1.tar owu/number-sender:0.0.1
+docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
 
 # Import Image
-docker load -i owu.number-sender.v0.0.1.tar
+docker load -i owu.number-sender.0.0.1.tar
 ```
