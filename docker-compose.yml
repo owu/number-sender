@@ -1,9 +1,9 @@
 name: number-sender-group
 services:
     redis-local:
-        container_name: redis-server
+        container_name: number-redis
         ports:
-          - 6379:6379
+          - "6379:6379"
         volumes:
           - ./docker/redis/conf/redis.conf:/etc/redis/redis.conf:ro
           - ./docker/redis/data:/data:rw
@@ -12,12 +12,12 @@ services:
         privileged: true
         image: redis:8.2.3
         command: redis-server /etc/redis/redis.conf
-    number-sender:
-        container_name: number-sender
+    number-local:
+        container_name: number-server
         ports:
-          - 8080:8080
+          - "8080:8080"
         volumes:
-          - ./docker/app/logs:/home/www/logs/number-sender-go/:rw
+          - ./docker/app/logs:/home/www/logs/number-sender-go:rw
           - ./docker/app/config/config.toml:/home/www/apps/number-sender-go/config/config.toml:ro
         restart: always
         privileged: true
