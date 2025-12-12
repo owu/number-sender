@@ -168,7 +168,7 @@ Docker镜像迁移功能
   镜像名称: owu/number-sender
   镜像版本: 0.0.1
   完整镜像名: owu/number-sender:0.0.1
-  导出文件名: owu.number-sender.v0.0.1.tar
+  导出文件名: owu.number-sender.0.0.1.tar
 ========================================
 请选择要执行的操作:
 1) 导出镜像 (docker save)
@@ -203,9 +203,9 @@ docker logs number-sender
 5. 镜像迁移：
 ```bash
 # 导出镜像
-docker save -o owu.number-sender.v0.0.1.tar owu/number-sender:0.0.1
+docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
 
 # 导入镜像
-docker load -i owu.number-sender.v0.0.1.tar
+docker load -i owu.number-sender.0.0.1.tar
 ```
 
