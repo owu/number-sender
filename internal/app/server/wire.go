@@ -5,8 +5,8 @@ package server
 
 import (
 	"github.com/google/wire"
-	"github.com/owu/number-sender/internal/app/service"
-	"github.com/owu/number-sender/internal/app/workers"
+	"number-sender/internal/app/service"
+	"number-sender/internal/app/workers"
 )
 
 func InitApp() error {

@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/owu/number-sender/internal/pkg/consts"
+import "number-sender/internal/pkg/consts"
 
 // AbabHandler , the last 4 digits of abab are repeated
 type AbabHandler struct {

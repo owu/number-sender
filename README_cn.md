@@ -165,10 +165,10 @@ u) 启动Docker容器 (docker compose up -d)
 ========================================
 Docker镜像迁移功能
 当前配置:
-  镜像名称: owu/number-sender
+  镜像名称: number-sender
   镜像版本: 0.0.1
-  完整镜像名: owu/number-sender:0.0.1
-  导出文件名: owu.number-sender.0.0.1.tar
+  完整镜像名: number-sender:0.0.1
+  导出文件名: number-sender.0.0.1.tar
 ========================================
 请选择要执行的操作:
 1) 导出镜像 (docker save)
@@ -182,7 +182,7 @@ Docker镜像迁移功能
 
 1. 构建镜像：
 ```bash
-docker build -t owu/number-sender:0.0.1 .
+docker build -t number-sender:0.0.1 .
 ```
 
 2. 启动容器：
@@ -203,9 +203,9 @@ docker logs number-sender
 5. 镜像迁移：
 ```bash
 # 导出镜像
-docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
+docker save -o number-sender.0.0.1.tar number-sender:0.0.1
 
 # 导入镜像
-docker load -i owu.number-sender.0.0.1.tar
+docker load -i number-sender.0.0.1.tar
 ```
 

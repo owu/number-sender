@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/utils"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/utils"
 )
 
 func AuthMw(configs *config.LoadConfigs) gin.HandlerFunc {

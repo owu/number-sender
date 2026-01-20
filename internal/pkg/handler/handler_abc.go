@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/owu/number-sender/internal/pkg/consts"
+import "number-sender/internal/pkg/consts"
 
 // AbcHandler , The last three digits increase
 type AbcHandler struct {

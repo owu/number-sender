@@ -2,11 +2,11 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/pkg/consts"
-	"github.com/owu/number-sender/internal/pkg/model"
-	"github.com/owu/number-sender/internal/pkg/redis"
-	"github.com/owu/number-sender/internal/pkg/utils"
 	"go.uber.org/zap"
+	"number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/model"
+	"number-sender/internal/pkg/redis"
+	"number-sender/internal/pkg/utils"
 	"strings"
 	"time"
 )

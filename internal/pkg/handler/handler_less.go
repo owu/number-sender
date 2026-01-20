@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/owu/number-sender/internal/pkg/consts"
+import "number-sender/internal/pkg/consts"
 
 // LessHandler , filter out numbers less than 10000
 type LessHandler struct {

@@ -2,10 +2,10 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/limit"
-	"github.com/owu/number-sender/internal/pkg/mware"
-	"github.com/owu/number-sender/internal/pkg/redis"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/limit"
+	"number-sender/internal/pkg/mware"
+	"number-sender/internal/pkg/redis"
 )
 
 func RegMux(r *gin.Engine, configs *config.LoadConfigs, defaultRedis *redis.DefaultRedis, limit *limit.Limiter) {

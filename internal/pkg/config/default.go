@@ -3,10 +3,10 @@ package config
 import (
 	"flag"
 	"github.com/BurntSushi/toml"
-	"github.com/owu/number-sender/internal/pkg/logger"
-	"github.com/owu/number-sender/internal/pkg/model"
 	"go.uber.org/zap"
 	"log"
+	"number-sender/internal/pkg/logger"
+	"number-sender/internal/pkg/model"
 	"os"
 	"path/filepath"
 	"strconv"
@@ -28,7 +28,7 @@ func NewLoadConfigs() *LoadConfigs {
 		flag.StringVar(&cfgVar, "config", "config/config-dev.toml", "config file path")
 		flag.Parse()
 	}
-	
+
 	cfgFile := instance.verifyFile(cfgVar)
 	if _, err := toml.DecodeFile(cfgFile, &configs); err != nil {
 		logger.Log.Error("config toml.DecodeFile failed", zap.Error(err), zap.String("cfgFile", cfgFile))

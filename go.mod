@@ -1,4 +1,4 @@
-module github.com/owu/number-sender
+module number-sender
 
 go 1.25.0
 

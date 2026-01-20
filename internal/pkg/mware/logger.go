@@ -3,8 +3,8 @@ package mware
 import (
 	ginzap "github.com/gin-contrib/zap"
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/pkg/logger"
 	"go.uber.org/zap/zapcore"
+	"number-sender/internal/pkg/logger"
 	"time"
 )
 

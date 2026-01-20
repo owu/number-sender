@@ -7,11 +7,11 @@
 package server
 
 import (
-	"github.com/owu/number-sender/internal/app/workers"
-	"github.com/owu/number-sender/internal/pkg/calculate"
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/limit"
-	"github.com/owu/number-sender/internal/pkg/redis"
+	"number-sender/internal/app/workers"
+	"number-sender/internal/pkg/calculate"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/limit"
+	"number-sender/internal/pkg/redis"
 )
 
 // Injectors from wire.go:

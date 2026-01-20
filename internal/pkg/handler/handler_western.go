@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/owu/number-sender/internal/pkg/consts"
-	"github.com/owu/number-sender/internal/pkg/utils"
+	"number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/utils"
 )
 
 // WesternHandler , Taboo Numbers in Western Countries

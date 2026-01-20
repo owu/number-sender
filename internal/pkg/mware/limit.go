@@ -2,8 +2,8 @@ package mware
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/pkg/limit"
-	"github.com/owu/number-sender/internal/pkg/utils"
+	"number-sender/internal/pkg/limit"
+	"number-sender/internal/pkg/utils"
 )
 
 func LimitMw(limit *limit.Limiter) gin.HandlerFunc {

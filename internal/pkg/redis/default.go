@@ -3,11 +3,11 @@ package redis
 import (
 	"context"
 	"fmt"
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/logger"
 	redisv9 "github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
 	"math/rand"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/logger"
 	"time"
 )
 

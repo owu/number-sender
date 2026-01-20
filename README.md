@@ -165,10 +165,10 @@ When you select option `m`, you will enter the image migration submenu:
 ========================================
 Docker Image Migration Function
 Current Configuration:
-  Image Name: owu/number-sender
+  Image Name: number-sender
   Image Version: 0.0.1
-  Full Image Name: owu/number-sender:0.0.1
-  Export File Name: owu.number-sender.0.0.1.tar
+  Full Image Name: number-sender:0.0.1
+  Export File Name: number-sender.0.0.1.tar
 ========================================
 Please select an operation:
 1) Export Image (docker save)
@@ -182,7 +182,7 @@ If you need to deploy using traditional methods, you can also manually execute t
 
 1. Build Image:
 ```bash
-docker build -t owu/number-sender:0.0.1 .
+docker build -t number-sender:0.0.1 .
 ```
 
 2. Start Containers:
@@ -203,8 +203,8 @@ docker logs number-sender
 5. Image Migration:
 ```bash
 # Export Image
-docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
+docker save -o number-sender.0.0.1.tar number-sender:0.0.1
 
 # Import Image
-docker load -i owu.number-sender.0.0.1.tar
+docker load -i number-sender.0.0.1.tar
 ```

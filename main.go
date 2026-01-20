@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/owu/number-sender/internal/app/server"
+	"number-sender/internal/app/server"
 )
 
 func main() {

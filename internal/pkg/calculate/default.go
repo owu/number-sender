@@ -1,8 +1,8 @@
 package calculate
 
 import (
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/handler"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/handler"
 )
 
 type Chains struct {

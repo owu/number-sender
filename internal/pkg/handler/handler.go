@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/owu/number-sender/internal/pkg/consts"
+import "number-sender/internal/pkg/consts"
 
 type Handler interface {
 	Handle(number uint64) consts.Plans

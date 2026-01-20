@@ -2,9 +2,9 @@ package calculate
 
 import (
 	"fmt"
-	"github.com/owu/number-sender/internal/pkg/consts"
-	"github.com/owu/number-sender/internal/pkg/logger"
 	"go.uber.org/zap"
+	"number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/logger"
 	"time"
 )
 

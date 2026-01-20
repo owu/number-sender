@@ -3,14 +3,14 @@ package server
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/owu/number-sender/internal/app/workers"
-	"github.com/owu/number-sender/internal/pkg/calculate"
-	"github.com/owu/number-sender/internal/pkg/config"
-	"github.com/owu/number-sender/internal/pkg/limit"
-	"github.com/owu/number-sender/internal/pkg/logger"
-	"github.com/owu/number-sender/internal/pkg/mware"
-	"github.com/owu/number-sender/internal/pkg/redis"
 	"go.uber.org/zap"
+	"number-sender/internal/app/workers"
+	"number-sender/internal/pkg/calculate"
+	"number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/limit"
+	"number-sender/internal/pkg/logger"
+	"number-sender/internal/pkg/mware"
+	"number-sender/internal/pkg/redis"
 
 	"log"
 )

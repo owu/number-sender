@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/owu/number-sender/internal/pkg/consts"
+import "number-sender/internal/pkg/consts"
 
 // CbaHandler , The last three digits decrease
 type CbaHandler struct {

@@ -1,9 +1,9 @@
 package server
 
 import (
-	"github.com/owu/number-sender/internal/pkg/calculate"
-	"github.com/owu/number-sender/internal/pkg/consts"
-	"github.com/owu/number-sender/internal/pkg/redis"
+	"number-sender/internal/pkg/calculate"
+	"number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/redis"
 )
 
 func Task(defaultRedis *redis.DefaultRedis, chains *calculate.Chains) {

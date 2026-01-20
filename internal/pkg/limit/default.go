@@ -1,7 +1,7 @@
 package limit
 
 import (
-	"github.com/owu/number-sender/internal/pkg/config"
+	"number-sender/internal/pkg/config"
 	"sync"
 )
 

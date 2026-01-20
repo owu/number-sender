@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"github.com/owu/number-sender/internal/pkg/model"
+	"number-sender/internal/pkg/model"
 )
 
 func (instance *LoadConfigs) Env() string {

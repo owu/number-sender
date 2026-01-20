@@ -4,11 +4,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"math/rand"
-	"github.com/owu/number-sender/internal/pkg/consts"
-	"github.com/owu/number-sender/internal/pkg/logger"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
+	"math/rand"
+	"number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/logger"
 	"sort"
 	"strconv"
 	"time"
@@ -102,18 +102,18 @@ func (instance *DefaultRedis) push(plan consts.Plans, result []uint64) (int64, b
 	if len(result) == 0 {
 		return 0, true
 	}
-	
+
 	// 直接在uint64层面排序，避免转换为字符串后再排序
 	sort.Slice(result, func(i, j int) bool {
 		return result[i] < result[j]
 	})
-	
+
 	// 批量转换为字符串
 	args := make([]interface{}, len(result))
 	for i, v := range result {
 		args[i] = strconv.FormatUint(v, 10)
 	}
-	
+
 	ret, err := instance.master().RPush(context.Background(), instance.planKey(plan), args...).Result()
 	if err != nil {
 		logger.Log.Error("redis master rpush failed", zap.Error(err), zap.String("plan", string(plan)))
@@ -126,7 +126,7 @@ func (instance *DefaultRedis) PushMap(values map[consts.Plans][]uint64) {
 	if len(values) == 0 {
 		return
 	}
-	
+
 	// 优化：使用Redis管道减少网络开销
 	for plan, result := range values {
 		if len(result) == 0 {

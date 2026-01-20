@@ -165,10 +165,10 @@ u) Dockerコンテナを起動 (docker compose up -d)
 ========================================
 Dockerイメージ移行機能
 現在の設定:
-  イメージ名: owu/number-sender
+  イメージ名: number-sender
   イメージバージョン: 0.0.1
-  完全なイメージ名: owu/number-sender:0.0.1
-  エクスポートファイル名: owu.number-sender.0.0.1.tar
+  完全なイメージ名: number-sender:0.0.1
+  エクスポートファイル名: number-sender.0.0.1.tar
 ========================================
 実行する操作を選択してください:
 1) イメージをエクスポート (docker save)
@@ -182,7 +182,7 @@ Dockerイメージ移行機能
 
 1. イメージを構築：
 ```bash
-docker build -t owu/number-sender:0.0.1 .
+docker build -t number-sender:0.0.1 .
 ```
 
 2. コンテナを起動：
@@ -203,8 +203,8 @@ docker logs number-sender
 5. イメージ移行：
 ```bash
 # イメージをエクスポート
-docker save -o owu.number-sender.0.0.1.tar owu/number-sender:0.0.1
+docker save -o number-sender.0.0.1.tar number-sender:0.0.1
 
 # イメージをインポート
-docker load -i owu.number-sender.0.0.1.tar
+docker load -i number-sender.0.0.1.tar
 ```

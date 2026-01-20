@@ -2,9 +2,9 @@
 
 # 定义镜像版本号，方便修改
 VERSION="0.0.1"
-IMAGE_NAME="owu/number-sender"
+IMAGE_NAME="number-sender"
 FULL_IMAGE_NAME="${IMAGE_NAME}:${VERSION}"
-TAR_FILE="owu.number-sender.${VERSION}.tar"
+TAR_FILE="number-sender.${VERSION}.tar"
 
 # 显示帮助信息
 show_help() {

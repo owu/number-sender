@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/owu/number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/consts"
 	"strconv"
 	"strings"
 )

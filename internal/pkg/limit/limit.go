@@ -2,7 +2,7 @@ package limit
 
 import (
 	"github.com/juju/ratelimit"
-	"github.com/owu/number-sender/internal/pkg/consts"
+	"number-sender/internal/pkg/consts"
 )
 
 func (instance *Limiter) TakeAvailable(fullPath string) bool {
